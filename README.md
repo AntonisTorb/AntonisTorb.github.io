@@ -2,9 +2,9 @@
 My name is Antonios Stefanos Tormpantonis and this will be my personal website in the future!
 In the mean time, here are some links!
 
-My LinkedIn [Profile](https://www.linkedin.com/in/antonis-tormp/)
+My LinkedIn [Profile](https://www.linkedin.com/in/antonis-tormp/).
 
-My First Project: [DisInfected](https://github.com/AntonisTorb/DisInfected) | On [GitHub Pages](https://antonistorb.github.io/DisInfected/)
+My First Project: [DisInfected](https://github.com/AntonisTorb/DisInfected) Repo and on [GitHub Pages](https://antonistorb.github.io/DisInfected/).
 
 
 <!--
