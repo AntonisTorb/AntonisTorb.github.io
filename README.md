@@ -1,23 +1,10 @@
 ### Hi there 👋
-My name is Antonios Stefanos Tormpantonis and this will be my personal website in the future!
-In the mean time, here are some links!
-
-My LinkedIn [Profile](https://www.linkedin.com/in/antonis-tormp/).
-
-My First Project: [DisInfected](https://github.com/AntonisTorb/DisInfected) Repo and on [GitHub Pages](https://antonistorb.github.io/DisInfected/).
+My name is Antonios-Stefanos Tormpantonis and this is my personal website! It's only a static website, so it might be limited in functionality, but it suits my needs and my current experience with HTML and CSS.
 
 
-<!--
-**AntonisTorb/AntonisTorb** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+### Future
+- Implement a way to switch between light and dark mode.
+- Add more sections on education, languages and interests in accordance with my CV.
 
-Here are some ideas to get you started:
-
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+### Inspirations:
+- [Demo Video by Traversy Media](https://www.youtube.com/watch?v=clwpf3VwCZQ&t=0s)
