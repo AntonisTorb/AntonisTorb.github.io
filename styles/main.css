@@ -3,10 +3,10 @@
 :root{
     --mainTextColor-light: #000;
     --secondaryTextColor-light:rgb(51, 51, 51);
-    --mainLinkColor-light:#0da2b8;
-    --mainBorderColor-light:rgb(192, 192, 192);
+    --mainLinkColor-light:#0d79b8;
+    --mainBorderColor-light:rgb(202, 202, 202);
     --mainBgColor-light:rgb(249, 250,251);
-    --secondaryBgColor-light: #d5d5d5;
+    --secondaryBgColor-light: #dfdfdf;
 
     --mainTextColor-dark:rgb(239, 239, 239);
     --secondaryTextColor-dark:#c0c3c4;
@@ -68,7 +68,6 @@ li{
 
 #light-dark{
     display: flex;
-    border: 2px solid var(--mainBorderColor);
     border-radius: 15px;
     cursor: pointer;
 }
@@ -110,9 +109,13 @@ li{
     object-fit: cover;
 }
 
+#profile-pic:hover{
+    border-radius: 10%;
+    transition: 1s;
+}
+
 #email{
     color: var(--mainTextColor);
-    transition: .3s;
 }
 
 #email:hover{
@@ -126,14 +129,18 @@ li{
     flex-wrap: wrap;
 }
 
-#socials-list a{
+#card--social{
+    border: 1px solid var(--mainBorderColor);
+    padding: 0.5em 1em;
+    border-radius: 10px;
     font-size: 0.9em;
+    background-color: var(--secondaryBgColor);
     color: var(--secondaryTextColor);
-    transition: .3s;
 }
 
-#socials-list a:hover{
+#card--social:hover{
     color: var(--mainLinkColor);
+    background-color: var(--mainBorderColor);
 }
 
 #qualifications-list{
@@ -151,7 +158,6 @@ li{
     border: 1px solid var(--mainBorderColor);
     padding: 0.5em 1em;
     border-radius: 8px;
-    transition: .3s;
 }
 
 .card--skills:hover{
@@ -165,11 +171,16 @@ li{
     padding-top: 3em;
     padding-bottom: 2em;
     padding-left: 2em;
+    padding-right: 2em;
 }
 
 .line-break{
     background-color: var(--mainBorderColor);
     height: 1px;
+}
+
+#language-list{
+    list-style: none;
 }
 
 .card--project{
@@ -180,13 +191,10 @@ li{
 
 .card--project a{
     color: var(--mainTextColor);
-
-    transition: 0.3s;
 }
 
 .card--project a:hover{
-    color: rgb(30, 190,214);
-
+    color: var(--mainLinkColor);
 }
 
 @media(max-width:650px){
@@ -199,10 +207,23 @@ li{
         padding-top: 1em;
         padding-bottom: 1em;
     }
+    
+    .section--page a{
+        color: var(--mainLinkColor);
+    }
+
+    #email{
+        color: var(--mainLinkColor);
+    }
+
+    #card--social{
+        color: var(--mainLinkColor);
+    }
 
     .card--work-history{
         border-left: none;
         border-right: none;
         padding-left: 0;
+        padding-right: 0;
     }
 }
