@@ -98,6 +98,10 @@ li{
     line-height: 1em;
 }
 
+#bio{
+    text-align: justify;
+}
+
 #bio, a{
     font-weight: 300;
 }
@@ -112,6 +116,7 @@ li{
 #profile-pic:hover{
     border-radius: 10%;
     transition: 1s;
+    scale: 1.2;
 }
 
 #email{
@@ -212,8 +217,14 @@ li{
         color: var(--mainLinkColor);
     }
 
+    #bio{
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+
     #email{
         color: var(--mainLinkColor);
+        padding-left: 1em;
     }
 
     #card--social{
