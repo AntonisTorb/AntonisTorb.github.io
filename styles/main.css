@@ -63,7 +63,6 @@ li{
 #wrapper--header{
     display: flex;
     justify-content: space-between;
-    padding-bottom: 1em;
 }
 
 .tabs--menu{
@@ -212,32 +211,82 @@ li{
     height: 1px;
 }
 
+.card--education-history{
+    padding-top: 3em;
+    padding-bottom: 2em;
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
 #language-list{
     list-style: none;
 }
 
-.card--project{
+.card--accomplishment{
     padding-top: 1em;
     padding-bottom: 1em;
     border-top: 1px solid var(--mainBorderColor);
 }
 
-.card--project a{
+.card--accomplishment a{
     color: var(--mainTextColor);
 }
 
-.card--project a:hover{
+.card--accomplishment a:hover{
     color: var(--mainLinkColor);
+}
+
+#column--projects{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
 }
 
 .row--projects{
     display: flex;
-    justify-content: center;
-    padding: 2em;
+    flex-direction: column;
+    padding-left: 2em;
 }
 
 .row--projects a:hover{
     color: var(--mainLinkColor);
+}
+
+#project-emote{
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+}
+
+.project-container{
+    display: flex;
+    gap: 3em;
+    align-items: center;
+}
+
+.project-image-link{
+    display: flex;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+}
+
+.project-image:hover{
+    scale: 1.2;
+}
+
+.project-image{
+    border: 1px solid var(--mainBorderColor);
+    border-radius: 15px;
+}
+
+.project-description p{
+    text-align: justify;
+}
+
+.footer{
+    text-align: center;
+    padding: 5em;
 }
 
 @media(max-width:650px){
@@ -274,5 +323,10 @@ li{
         border-right: none;
         padding-left: 0;
         padding-right: 0;
+    }
+
+    .project-container{
+        flex-direction: column;
+        gap: 0;
     }
 }
