@@ -24,6 +24,36 @@
     --activeTabColor: rgb(161, 161, 161);
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html:focus-within {
+    scroll-behavior: smooth;
+}
+
+body {
+    min-height: 100vh;
+    text-rendering: optimizeSpeed;
+}
+
+@media (prefers-reduced-motion: reduce) {
+html:focus-within {
+    scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
 *{
     font-family: 'Readex Pro';
     line-height: 1.5em;
@@ -118,6 +148,7 @@ li{
     display: flex;
     align-items: center;
     gap: 4em;
+    padding-left: 20px;
 }
 
 #user-name{
@@ -293,6 +324,11 @@ li{
     #wrapper--hero{
         flex-direction: column;
         gap: 1em;
+        padding-left: 0;
+    }
+
+    #profile-pic:hover{
+        scale: 1;
     }
     
     .section--page{
@@ -325,8 +361,16 @@ li{
         padding-right: 0;
     }
 
+    .row--projects{
+        padding-left: 0;
+    }
+
     .project-container{
         flex-direction: column;
         gap: 0;
+    }
+
+    .project-image:hover{
+        scale: 1;
     }
 }
