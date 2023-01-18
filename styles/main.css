@@ -181,7 +181,8 @@ li{
     color: var(--mainTextColor);
 }
 
-#email:hover{
+#email:hover,
+#email:focus-visible{
     color: var(--mainLinkColor);
 }
 
@@ -201,7 +202,8 @@ li{
     color: var(--secondaryTextColor);
 }
 
-#card--social:hover{
+#card--social:hover,
+#card--social:focus-visible{
     color: var(--mainLinkColor);
     background-color: var(--mainBorderColor);
 }
@@ -263,7 +265,8 @@ li{
     color: var(--mainTextColor);
 }
 
-.card--accomplishment a:hover{
+.card--accomplishment a:hover,
+.card--accomplishment a:focus-visible{
     color: var(--mainLinkColor);
 }
 
@@ -279,7 +282,8 @@ li{
     padding-left: 2em;
 }
 
-.row--projects a:hover{
+.row--projects a:hover,
+.row--projects a:focus-visible{
     color: var(--mainLinkColor);
 }
 

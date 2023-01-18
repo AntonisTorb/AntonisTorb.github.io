@@ -11,7 +11,7 @@
 
 <body>
     <div id="container--main">
-        <div id="wrapper--header">
+        <header id="wrapper--header">
             <div class="tabs--menu">
                 <div class="tablinks active" onclick="tabSwitch(event, 'page--main')" id="tab--main">Main</div>
                 <div class="tablinks" onclick="tabSwitch(event, 'page--projects')" id="tab--projects">Projects</div>
@@ -20,8 +20,8 @@
                 <div id="light" class="btn" onclick="lightmode()"><span>☀️</span></div>
                 <div id="dark" class="btn" onclick="darkmode()"><span>🌙</span></div>
             </div>
-        </div>
-
+        </header>
+        
         <div id="page--main" class="tabcontent">
             <section id="wrapper--hero" class="section--page">
                 <img id="profile-pic" src="./assets/images/profile_pic.jpg"/>
@@ -237,9 +237,9 @@
             </section>
         </div>
 
-        <div class="footer">
+        <footer class="footer">
             <h1>Thank you for your time!</h1>
-        </div>
+        </footer>
     </div>
 </body>
 </html>
