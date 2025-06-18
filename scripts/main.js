@@ -1,14 +1,14 @@
 let r = document.querySelector(':root');
 let rs = getComputedStyle(r)
 
-function tabSwitch(evt, tab){
+function tabSwitch(evt, tab) {
     let tabcontent = document.getElementsByClassName("tabcontent");
-    for (let i = 0; i < tabcontent.length; i++){
+    for (let i = 0; i < tabcontent.length; i++) {
         tabcontent[i].style.display = "none"
     }
 
     let tablinks = document.getElementsByClassName("tablinks");
-    for (let i = 0; i < tablinks.length; i++){
+    for (let i = 0; i < tablinks.length; i++) {
         tablinks[i].className = tablinks[i].className.replace("active", "");
         tablinks[i].style.setProperty("background-color", rs.getPropertyValue("--mainBorderColor"));
     }
@@ -18,15 +18,15 @@ function tabSwitch(evt, tab){
     evt.currentTarget.style.setProperty("background-color", rs.getPropertyValue("--activeTabColor"));
 }
 
-function updateTabOnModeChange(){
+function updateTabOnModeChange() {
     let tablinks = document.getElementsByClassName("tablinks");
-    for (i = 0; i < tablinks.length; i++){
+    for (i = 0; i < tablinks.length; i++) {
         tablinks[i].style.setProperty("background-color", rs.getPropertyValue("--mainBorderColor"));
     }
     document.getElementsByClassName("active")[0].style.setProperty("background-color", rs.getPropertyValue("--activeTabColor"));
 }
 
-function lightmode(){
+function lightmode() {
     r.style.setProperty("--mainTextColor", rs.getPropertyValue("--mainTextColor-light"));
     r.style.setProperty("--secondaryTextColor", rs.getPropertyValue("--secondaryTextColor-light"));
     r.style.setProperty("--mainLinkColor", rs.getPropertyValue("--mainLinkColor-light"));
@@ -38,7 +38,7 @@ function lightmode(){
     updateTabOnModeChange();
 }
 
-function darkmode(){
+function darkmode() {
     r.style.setProperty("--mainTextColor", rs.getPropertyValue("--mainTextColor-dark"));
     r.style.setProperty("--secondaryTextColor", rs.getPropertyValue("--secondaryTextColor-dark"));
     r.style.setProperty("--mainLinkColor", rs.getPropertyValue("--mainLinkColor-dark"));
@@ -50,6 +50,6 @@ function darkmode(){
     updateTabOnModeChange();
 }
 
-window.onload = function(){
+window.onload = function () {
     document.getElementById("tab--main").click()
 }
